@@ -1,120 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>airpay</title>
-  <meta
-    name="description"
-    content="airpay is an offline-capable UPI payment app built on top of *99# USSD for low-connectivity environments."
-  />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="./styles.css" />
-</head>
-<body>
-  <main class="page">
-    <nav class="top-links" aria-label="External links">
-      <a href="#repo-coming-soon">repo</a>
-      <a href="mailto:airpay.perry@gmail.com">mail</a>
-    </nav>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>airpay</title>
+        <meta
+            name="description"
+            content="airpay is an offline-capable UPI payment app built on top of *99# USSD for low-connectivity environments."
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <main class="page">
+            <nav class="top-links" aria-label="External links">
+                <a
+                    href="https://github.com/Meetkhurana04/airpay-v2?tab=readme-ov-file"
+                    >repo</a
+                >
+                <a href="mailto:airpay.perry@gmail.com">mail</a>
+            </nav>
 
-    <section class="hero">
-      <p class="eyebrow">public project page</p>
+            <section class="hero">
+                <p class="eyebrow">public project page</p>
 
-      <h1>hi, this is airpay.</h1>
+                <h1>hi, this is airpay.</h1>
 
-      <h2>it's an offline-capable upi app we built for low-connectivity environments.</h2>
+                <h2>
+                    it's an offline-capable upi app we built for
+                    low-connectivity environments.
+                </h2>
 
-      <p>
-        one simple, clean place to scan a qr, enter a upi id, and complete a payment
-        even when internet access is weak or unavailable. airpay uses a device-side
-        session management layer, automates the bank interaction flow on-device, and
-        stops at the pin step so the user still enters credentials in the bank prompt.
-      </p>
-    </section>
+                <p>
+                    one simple, clean place to scan a qr, enter a upi id, and
+                    complete a payment even when internet access is weak or
+                    unavailable. airpay uses a device-side session management
+                    layer, automates the bank interaction flow on-device, and
+                    stops at the pin step so the user still enters credentials
+                    in the bank prompt.
+                </p>
+            </section>
 
-    <section class="media-placeholder" aria-label="Demo media">
-      <div class="media-frame">
-        <div class="media-shell">
-          <div class="media-copy">
-            <p class="media-kicker">product demo</p>
-            <h3>Offline payments, shown as a real flow.</h3>
-            <p>
-              airpay turns a fragile payment moment into a guided, reliable one. scan
-              a qr or enter a upi id, move through the bank handoff on-device, and
-              still keep the final pin step in the user's control.
-            </p>
-            <p>
-              built for low-connectivity environments, the product is less about
-              visual polish alone and more about making sure the payment can still
-              happen when the network is weak, the context is messy, and trust matters.
-            </p>
-          </div>
+            <section class="media-placeholder" aria-label="Demo media">
+                <div class="media-frame">
+                    <div class="media-shell">
+                        <div class="media-copy">
+                            <p class="media-kicker">product demo</p>
+                            <h3>Offline payments, shown as a real flow.</h3>
+                            <p>
+                                airpay turns a fragile payment moment into a
+                                guided, reliable one. scan a qr or enter a upi
+                                id, move through the bank handoff on-device, and
+                                still keep the final pin step in the user's
+                                control.
+                            </p>
+                            <p>
+                                built for low-connectivity environments, the
+                                product is less about visual polish alone and
+                                more about making sure the payment can still
+                                happen when the network is weak, the context is
+                                messy, and trust matters.
+                            </p>
+                        </div>
 
-          <div class="demo-stage">
-            <div class="demo-stage-bar" aria-hidden="true">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <video
-              id="airpay-demo-video"
-              class="demo-video"
-              src="./assets/airpay-demo.mp4"
-              autoplay
-              muted
-              loop
-              playsinline
-              controls
-              preload="metadata"
-              data-playback-rate="1.25"
-              aria-label="AirPay product demo video"
-            ></video>
-          </div>
-        </div>
-      </div>
-    </section>
+                        <div class="demo-stage">
+                            <div class="demo-stage-bar" aria-hidden="true">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <video
+                                id="airpay-demo-video"
+                                class="demo-video"
+                                src="./assets/airpay-demo.mp4"
+                                autoplay
+                                muted
+                                loop
+                                playsinline
+                                controls
+                                preload="metadata"
+                                data-playback-rate="1.25"
+                                aria-label="AirPay product demo video"
+                            ></video>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <section class="details">
-      <p>
-        built around qr scanning, device-side flow orchestration, balance checks, and
-        local-first transaction history.
-      </p>
-      <p>
-        android app. public repo link goes here soon. until then, this page acts as
-        the public home for the project.
-      </p>
-      <p>
-        if you want to reach us, use the mail link above. the live product motion is
-        embedded here directly so the page can carry the story on its own.
-      </p>
-    </section>
+            <section class="details">
+                <p>
+                    built around qr scanning, device-side flow orchestration,
+                    balance checks, and local-first transaction history.
+                </p>
+                <p>android app. repository is now public.</p>
+                <p>
+                    if you want to reach us, use the mail link above. the live
+                    product motion is embedded here directly so the page can
+                    carry the story on its own.
+                </p>
+            </section>
 
-    <section id="repo-coming-soon" class="repo-note">
-      <a href="#repo-coming-soon">repo link will be attached here once public.</a>
-    </section>
-  </main>
+            <section id="repo-coming-soon" class="repo-note">
+                <a
+                    href="https://github.com/Meetkhurana04/airpay-v2?tab=readme-ov-file"
+                    >airpay-v2 repository</a
+                >
+            </section>
+        </main>
 
-  <script>
-    const demoVideo = document.getElementById("airpay-demo-video");
+        <script>
+            const demoVideo = document.getElementById("airpay-demo-video");
 
-    if (demoVideo) {
-      const targetRate = Number(demoVideo.dataset.playbackRate || "1");
+            if (demoVideo) {
+                const targetRate = Number(
+                    demoVideo.dataset.playbackRate || "1",
+                );
 
-      const applyPlaybackRate = () => {
-        demoVideo.playbackRate = targetRate;
-        demoVideo.defaultPlaybackRate = targetRate;
-      };
+                const applyPlaybackRate = () => {
+                    demoVideo.playbackRate = targetRate;
+                    demoVideo.defaultPlaybackRate = targetRate;
+                };
 
-      applyPlaybackRate();
-      demoVideo.addEventListener("loadedmetadata", applyPlaybackRate);
-      demoVideo.addEventListener("play", applyPlaybackRate);
-    }
-  </script>
-</body>
+                applyPlaybackRate();
+                demoVideo.addEventListener("loadedmetadata", applyPlaybackRate);
+                demoVideo.addEventListener("play", applyPlaybackRate);
+            }
+        </script>
+    </body>
 </html>
