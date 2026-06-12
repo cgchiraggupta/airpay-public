@@ -113,6 +113,8 @@
             </section>
         </main>
 
+        <audio id="bg-music" src="./assets/song.mp3" loop preload="none"></audio>
+
         <script>
             const demoVideo = document.getElementById("airpay-demo-video");
 
@@ -130,6 +132,18 @@
                 demoVideo.addEventListener("loadedmetadata", applyPlaybackRate);
                 demoVideo.addEventListener("play", applyPlaybackRate);
             }
+
+            (() => {
+                const audio = document.getElementById("bg-music");
+                if (!audio) return;
+                audio.volume = 0.25;
+                let started = false;
+                document.addEventListener("click", () => {
+                    if (started) return;
+                    started = true;
+                    audio.play().catch(() => {});
+                }, { once: true });
+            })();
         </script>
     </body>
 </html>
